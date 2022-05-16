@@ -8,7 +8,6 @@ const Container = styled.div`
   position: relative;
 `;
 
-
 function App() {
   return (
     <Container>

@@ -6,10 +6,9 @@ import { useStateValue } from '../StateProvider';
 const Container = styled.div`
     display: flex;
     padding-left: 250px;
-    padding-top: 200px;
+    padding-top: 20%;
 
     svg {
-
         position: relative;
         width: 150px;
         height: 150px;
@@ -50,9 +49,9 @@ const Loader = () => {
 
     useEffect(() => {
         const interval = setInterval(() => {
-          setCount(count - 1);
+            setCount(count - 1);
         }, 1000);
-
+        
         if(count <= 0){
             clearInterval(interval)
             dispatch({type: 'IS_PAGE_LOADING', isLoading: !isLoading})
@@ -75,4 +74,4 @@ const Loader = () => {
   )
 }
 
-export default Loader
+export default Loader;

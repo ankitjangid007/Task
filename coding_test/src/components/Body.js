@@ -29,7 +29,7 @@ const BodyContent = styled.div`
 
 
 
-const Body = (props) => {
+const Body = () => {
 
     const [{ isOpen, isLoading }, dispatch]  = useStateValue()
 
